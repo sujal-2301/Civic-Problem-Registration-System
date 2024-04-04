@@ -21,7 +21,7 @@ p {
 }
 .main {
   /* width: 100%; */
-  height: 90%;
+  height: 95%;
   /* background-color: royalblue; */
   /* display: flex; */
 }
@@ -122,21 +122,23 @@ button {
 }
 
 .page2 {
-  height: 100vh;
+  margin-top: 10vh;
+  height: 40vh;
   width: 100%;
   /* background-color: lightblue; */
   display: flex;
   justify-content: center;
 }
 #hands-image {
-  height: 60vh;
+  height: 30vh;
   width: 50%;
   /* background-color: black; */
   margin-left: 5vw;
 }
 #hands-desc {
-  height: 60vh;
+  height: 30vh;
   width: 50%;
+  /* background-color: aqua; */
 }
 #hands-desc h4 {
   font-size: 1.8vw;
@@ -145,6 +147,54 @@ button {
   width: 90%;
   margin-top: 1.8vw;
   font-style: italic;
+}
+.feature-heading h1 {
+  text-align: center;
+  margin-bottom: 5vh;
+  font-size: 4vw;
+  font-weight: 900;
+  line-height: 4.8vw;
+}
+.features {
+  width: 100%;
+  height: 50vh;
+  /* background-color: aqua; */
+  display: flex;
+  gap: 12px;
+  justify-content: space-evenly;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  /* background-color: #dadada; */
+}
+
+.top {
+  height: 70%;
+  /* background-color: lightblue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.top img {
+  height: 100%;
+}
+.bottom {
+  display: flex;
+  /* background-color: green; */
+  /* height: 100%; */
+  width: 100%;
+  justify-content: center;
+}
+.bottom h4 {
+  font-size: 1.8vw;
+  color: #666;
+  font-weight: 600;
+  width: 90%;
+  margin-top: 1.8vw;
+  font-style: italic;
+  text-align: center;
 }
 @media (max-width: 600px) {
   nav h1 {
