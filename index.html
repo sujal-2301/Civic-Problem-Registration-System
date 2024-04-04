@@ -4,40 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div id="main">
-      <div id="page">
-        <nav>
-          <img src="./logo.png" alt="" />
-          <div class="center-nav">
-            <a href="#">ABOUT</a>
-            <a href="#">SERVICES</a>
-            <a href="#">PORTFOLIO</a>
-            <a href="#">CONTACT</a>
-          </div>
-          <!-- <input type="text" />search -->
-          <input type="text" placeholder="search" />
-        </nav>
-        <img src="./pexels-photo-7300719.jpeg" alt="" />
-        <div class="text">
-          <h5>Welcome to</h5>
-          <h1>Civic problem<br />registration <br />system!</h1>
-          <h4>
+    <div class="main">
+      <nav>
+        <img id="logo-image" src="logo.png" alt="" />
+        <div class="nav-part2">
+          <h4>Home</h4>
+          <h4>About</h4>
+          <h4>Features</h4>
+          <h4>Contact</h4>
+          <h4>Account</h4>
+          <i class="ri-menu-3-fill"></i>
+          <button>Sign In</button>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="left">
+          <h1>
+            Welcome to <br /><span>Civic Problem </span>registration system!
+          </h1>
+          <p>
             Empowering citizens to report and track civic issues for a cleaner,
-            safer & more responsive community. <br />
-            Join us in making a difference today!
-          </h4>
-          <div class="button">
-            <button id="b1">
-              Report Issue <i class="ri-telegram-line"></i>
-            </button>
-          </div>
+            safer, and more responsive community. Join us in making a difference
+            today!
+          </p>
+          <button>Register Issue</button>
+        </div>
+        <div class="right">
+          <img src="./pexels-photo-7300719.jpeg" alt="" />
         </div>
       </div>
       <div class="page2">
@@ -45,17 +45,16 @@
           <img src="./hands.png" alt="" />
         </div>
         <div id="hands-desc">
-          <em
-            >Together, we can build a better community. By reporting civic
-            issues and working together to address them, we can make a positive
-            impact on our neighborhoods and our lives. Join us in creating a
-            cleaner, safer, and more responsive community for everyone. With
-            your help, we can make a difference. Let's work together to create a
-            brighter future for all.</em
-          >
+          <h4>
+            Together, we can build a better community. By reporting civic issues
+            and working together to address them, we can make a positive impact
+            on our neighborhoods and our lives. Join us in creating a cleaner,
+            safer, and more responsive community for everyone. With your help,
+            we can make a difference. Let's work together to create a brighter
+            future for all.
+          </h4>
         </div>
       </div>
     </div>
-    <script src="./script.js"></script>
   </body>
 </html>
