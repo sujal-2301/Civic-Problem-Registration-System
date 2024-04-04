@@ -246,4 +246,12 @@ button {
     border-radius: 3px;
     font-weight: 600;
   }
+  .features {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .page2 {
+    display: none;
+  }
 }
