@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Civic Problem Registration System</title>
+    <link rel="stylesheet" and href="style2.css" />
+  </head>
+  <body>
+    <nav></nav>
+    <main>
+      <section class="registration-form">
+        <h2>Register a Civic Problem</h2>
+        <form action="#">
+          <label for="problem-type">Problem Type:</label>
+          <select id="problem-type" name="problem-type">
+            <option value="pothole">Pothole</option>
+            <option value="street-light">Street Light Outage</option>
+            <option value="garbage">Garbage Collection Issue</option>
+          </select>
+          <label for="location">Location:</label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="Enter Location"
+          />
+          <label for="description">Description:</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="4"
+            placeholder="Enter Description"
+          ></textarea>
+          <label for="image">Upload Image:</label>
+          <input type="file" id="image" name="image" accept="image/*" />
+          <br />
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
