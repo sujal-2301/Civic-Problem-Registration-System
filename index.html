@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="main">
       <nav>
         <img id="logo-image" src="logo.png" alt="" />
         <div class="nav-part2">
-          <h4>Home</h4>
-          <h4>About</h4>
-          <h4>Features</h4>
-          <h4>Contact</h4>
-          <h4>Account</h4>
+          <a href=""><h4>Home</h4></a>
+          <a href="#about-section"><h4>About</h4></a>
+          <a href="#feature-section"><h4>Features</h4></a>
+          <a href="#contact-section"><h4>Contact</h4></a>
+          <a href=""><h4>Account</h4></a>
           <i class="ri-menu-3-fill"></i>
-          <button>Sign In</button>
+          <a href="./registration/form.html"><button>Sign In</button></a>
         </div>
       </nav>
       <div class="content">
@@ -34,34 +34,35 @@
             safer, and more responsive community. Join us in making a difference
             today!
           </p>
-          <button>Register Issue</button>
+          <a href="./registration/index2.html"
+            ><button>Register Issue</button></a
+          >
         </div>
         <div class="right">
           <img src="./pexels-photo-7300719.jpeg" alt="" />
         </div>
       </div>
-      
-      <div class="feature-heading"><h1>Features</h1></div>
+
+      <div id="feature-section" class="feature-heading"><h1>Features</h1></div>
       <div class="features">
         <div class="feature">
-          <div class="top"><img src="./simple-ui.jpeg" alt=""></div>
+          <div class="top"><img src="./simple-ui.jpeg" alt="" /></div>
           <div class="bottom"><h4>Simple User Interface</h4></div>
         </div>
         <div class="feature">
           <div class="top">
-            <img src="./easy_report.jpeg" alt="">
+            <img src="./easy_report.jpeg" alt="" />
           </div>
           <div class="bottom"><h4>Easy reporting</h4></div>
         </div>
         <div class="feature">
           <div class="top">
-            <img src="./notifications.jpeg" alt="">
+            <img src="./notifications.jpeg" alt="" />
           </div>
           <div class="bottom"><h4>Notification Alerts</h4></div>
         </div>
-        
       </div>
-      <div class="page2">
+      <div id="about-section" class="page2">
         <div id="hands-image">
           <img src="./hands.png" alt="" />
         </div>
@@ -75,7 +76,17 @@
           </h4>
         </div>
       </div>
-      </div>
+      <footer id="contact-section">
+       
+        <div class="contact-us">
+          <div class="contact"><h1>Contact Us</h1></div>
+          <div class="socials">
+            <div class="github"><a href="https://github.com/sujal-2301/Civic-Problem-Registration-System"><i class="fa fa-github"></i></a></div>
+            <a href="https://github.com/sujal-2301/Civic-Problem-Registration-System"><h4>GitHub</h4></a>
+          </div>
+        </div>
+        <div class="copyright"> <h3>&#169 2024 PBL Project</h3></div>
+      </footer>
     </div>
   </body>
 </html>
