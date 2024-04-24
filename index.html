@@ -21,7 +21,7 @@
           <a href="#contact-section"><h4>Contact</h4></a>
           <a href="./registration/form.html"><h4>Account</h4></a>
           <i class="ri-menu-3-fill"></i>
-          <a href="./registration/form.html"><button>Sign In</button></a>
+          <a href="./registration/form.html"><button id="index-signin-button" >Sign In</button></a>
         </div>
       </nav>
       <div class="content">
@@ -88,5 +88,23 @@
         <div class="copyright"> <h3>&#169 2024 PBL Project</h3></div>
       </footer>
     </div>
+
+<script>
+
+const loginButton = document.getElementById('index-signin-button');
+// Simulate "logged in" state (replace with actual login logic)
+function updateButtonText() {
+  // Retrieve login state from localStorage (or null if not set)
+  const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
+  // Update button text based on login state
+  loginButton.textContent = isLoggedIn ? "Welcome" : "Signin";
+}
+
+// Call the function on page load and after potential navigation
+updateButtonText();
+window.addEventListener('popstate', updateButtonText);
+</script>
+
   </body>
 </html>

@@ -36,9 +36,39 @@
           <input type="file" id="image" name="image" accept="image/*" />
           <br />
           <br />
-          <button type="submit">Submit</button>
+          <button id="submit-btn" type="submit">Submit</button>
         </form>
       </section>
     </main>
+    <script>
+      const submitButton = document.getElementById("submit-btn");
+      submitButton.addEventListener("click", () => {
+        event.preventDefault();
+        // Create snackbar element
+        const snackbar = document.createElement("div");
+        snackbar.id = "snackbar";
+        snackbar.innerText = "Thank you for registering the problem!";
+        snackbar.style.cssText = `
+          position: fixed;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 10;
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border-radius: 5px;
+          font-size: 18px;
+        `;
+
+        // Append snackbar to body
+        document.body.appendChild(snackbar);
+
+        // Show snackbar for a few seconds and then remove it
+        setTimeout(() => {
+          snackbar.remove();
+        }, 6000); // Adjust timeout as needed (in milliseconds)
+      });
+    </script>
   </body>
 </html>
